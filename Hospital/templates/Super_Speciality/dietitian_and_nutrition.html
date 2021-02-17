@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+{% extends 'Hospital/base.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}
+    Dietitian and Nutritionist
+    {% endblock title %}
+</head>
+<body>
+{% block content %}
+<div class="container mt-4">
+    <div class="speciality">
+        <div class="row text-center">
+            <div class="col-12">
+                <img src="{% static 'image/Speciality/Common-Banner-Header.png' %}"
+                     class="d-block w-100">
+            </div>
+            <h1>Dietitian and Nutritionist</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-6 py-4">
+                <img src="{% static 'image/All_Doctors/Dr.-Shama-Chohan-Shaikh.png' %}" class="d-block w-100">
+                <h3><b>Dr. Shama Chohan Shaikh</b></h3>
+                <h5><b>Dietitian and Nutritionist</b></h5>
+                <h6>
+                    MSC - (Clinical Nutrition and Dietetics) &<br>
+                    BSC - Graduated in Food Science and Nutrition
+                </h6>
+            </div>
+            <div class="col-md-6 py-4">
+                <p>
+                    Dr. Shama Chohan Shaikh is Master in Food and Health so here he will give you the importance of Food
+                    and how to make your Life Healthy and Happy with some tips and ideas.
+                </p>
+                <p>
+                    She will also give you Diet Plans for weight loss, weight gain, children's diet, elderly diet,
+                    pregnancy and lactation diet with some Best tips and healthy recipes.
+                </p>
+                <p>
+                    She will also give Healthy lifestyle plans, Disease-related health tips and Diet plans with Beauty
+                    tips, Easy and healthy Nutritionist recipes, Easy and effective exercise ideas, and many more.
+                </p>
+                <p>
+                    Health and Wellness is a most expensive gift from God , so everyone should take care of it :)
+                </p>
+                <h3 style="text-align:left;"><b>Area Of Expertise</b></h3>
+                <ul type="square">
+                    <li>Weight Loss</li>
+                    <li>Weight Gain</li>
+                    <li>Pregnancy Diet</li>
+                    <li>All types of diet management.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+{% extends 'Hospital/base.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}
+    Orthopedic
+    {% endblock title %}
+</head>
+<body>
+{% block content %}
+<div class="container mt-4">
+    <div class="speciality">
+        <div class="row text-center">
+            <div class="col-12">
+                <img src="{% static 'image/Speciality/orthopedics.jpg' %}" class="d-block w-100">
+            </div>
+            <h1>ORTHOPEDIC</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-6 py-4">
+                <img src="{% static 'image/All_Doctors/Dr.Rahul-Jagtap.png' %}" class="d-block w-100">
+                <h3><b>Dr. Rahul Jagtap</b></h3>
+                <h5><b>Consultant Orthopedic</b></h5>
+                <h6>MBBS, D.ORTHO, AFIH</h6>
+            </div>
+            <div class="col-md-6 py-4">
+                <p>
+                    Practicing orthopedics in Navi Mumbai since last 7 years as Trauma, spine and joint surgeon.
+                    Orthopedic surgeons are devoted to the prevention, diagnosis, and treatment of disorders of the
+                    bones, joints, ligaments, tendons and muscles.
+                </p>
+                <p>
+                    Not all orthopedic conditions require surgical intervention. Most of them can be treated with
+                    medication, physiotherapy and some daily routine modifications.
+                    I believe that giving quality patient care can absolutely have an effect on health outcomes. It
+                    contributes to a more positive patient recovery experience and can improve the physical and mental
+                    quality of life.
+                </p>
+                <h3 style="text-align:left;"><b>Area Of Expertise</b></h3>
+                <ul type="square">
+                    <li>Joints</li>
+                    <li>Muscles</li>
+                    <li>Fracture</li>
+                    <li>Arthritis</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+</body>
+</html>

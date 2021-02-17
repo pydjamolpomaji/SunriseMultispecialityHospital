@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+{% extends 'Hospital/base.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}
+    Urology
+    {% endblock title %}
+</head>
+<body>
+{% block content %}
+<div class="container mt-4">
+    <div class="speciality">
+        <div class="row text-center">
+            <div class="col-12">
+                <img src="{% static 'image/Speciality/Common-Banner-Header.png' %}"
+                     class="d-block w-100">
+            </div>
+            <h1>Urology</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-6 py-4">
+                <img src="{% static 'image/All_Doctors/Dr-.Nishant-Kathale.png' %}" class="d-block w-100">
+                <h3><b>Dr. Nishant Kathale</b></h3>
+                <h5><b>Consultant Urologist</b></h5>
+                <h6>
+                    MBBS, DNB GENERAL SURGERY, DNB UROLOGY, FELLOW MINIMAL ACCESS SURGERY IN UROLOGY (LAPAROSCOPY,
+                    ROBOTIC, ENDOUROLOGY) MUHS NASHIK.
+                </h6>
+            </div>
+            <div class="col-md-6 py-4">
+                <p>
+                    Dr. Nishant has extensive experience working in esteemed institutes like Jaslok hospital, Global
+                    hospital Parel, Jehangir Hospital, Saifee hospital,
+                </p>
+                <p>
+                    Dr. Nishant has vast experience in Renal Transplant Surgeries and surgeries for complications in
+                    renal transplant. He is a trained Robotic surgeon, and experienced in uro-oncology, management of
+                    kidney stones, cancer conditions of bladder, Reconstructive Urology, erectile dysfunction,
+                    neuro-urology including Sacral Neuromodulation, female urology, andrology, infertility and also
+                    paediatric urology. He is also specially trained to perform RIRS (Retrograde Intrarenal Surgery) for
+                    the management of Renal Polyps and Renal Stones
+                </p>
+                <h3 style="text-align:left;"><b>Area Of Expertise</b></h3>
+                <ul type="square">
+                    <li>Renal Transplant surgeries, AV Fistula, CAPD catheter insertion.</li>
+                    <li>Robotic Surgeries.</li>
+                    <li>
+                        Uro Oncology: Radical Nephrectomy, Nephro-ureterectomy, Nephron sparing partial nephrectomy,
+                        Radical prostatectomy, Radical cystectomy, TURBT etc.
+                    </li>
+                    <li>
+                        Female Urology: TVT, TOT insertion, Cystocele repair etc.
+                    </li>
+                    <li>
+                        Neuro-urology: Sacral Neuromodulation, Intravesical Botox injection. Neurovesical Dysfunction
+                        treatment etc.
+                    </li>
+                    <li>
+                        Reconstructive Urology: Pyeloplasty, remodeling and reimplantation of ureter, Surgeries for
+                        Undescended testis including Stephen fowler’s surgery, Boari Flap. Etc.
+                    </li>
+                    <li>
+                        Endourology& Stone treatment: PCNL, RIRS (Retrograde intra-renal surgery), URS, Cystolithotomy,
+                        cystolithotripsy, TURP, TURBT.
+                    </li>
+                    <li>
+                        Infertility: Male infertility treatments, Varicocele surgeries, TESA. PESA, TESE etc.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+</body>
+</html>

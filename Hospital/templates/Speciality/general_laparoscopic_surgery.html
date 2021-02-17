@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+{% extends 'Hospital/base.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}
+    General Surgery & Laparoscopic Surgery
+    {% endblock title %}
+</head>
+<body>
+{% block content %}
+<div class="container mt-4">
+    <div class="speciality">
+        <div class="row text-center">
+            <div class="col-12">
+                <img src="{% static 'image/Speciality/General surgery.jpg' %}" class="d-block w-100">
+            </div>
+            <h1>General Surgery & Laparoscopic Surgery</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-6 py-4">
+                <img src="{% static 'image/All_Doctors/Dr.-Bhakti-Sarang.png' %}"  class="d-block w-100">
+                <h3><b>Dr. Bhakti Sarang</b></h3>
+                <h5><b>Consultant General & Laparoscopic Surgeon</b></h5>
+                <h6>MBBS, DNB Surgery, FMAS</h6>
+            </div>
+            <div class="col-md-6 py-4">
+                <p>MBBS - 2007</p>
+                <p>DNB Surgery - 2011</p>
+                <p>Fellowship in Minimal Access Surgery - 2015</p>
+                <p>Experience- 9 years</p>
+                <p>Experience- 9 years</p>
+                <p>Special interest- General, Trauma & Breast Surgery</p>
+                <h3 style="text-align:left;"><b>Area Of Expertise</b></h3>
+                <ul type="square">
+                    <li>Hernias- Inguinal, Umbilical, Incisional</li>
+                    <li>Hydrocoele</li>
+                    <li>Breast Surgeries- Breast cancer, Fibroadenomas</li>
+                    <li>Piles, Fissures & Fistula surgeries</li>
+                    <li>Laparoscopic cholecystectomy</li>
+                    <li>Laproscopic & Open Appendicectomy</li>
+                    <li>All abdominal Surgeries</li>
+                    <li>Management of Burns</li>
+                    <li>Specialized wound care & management</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+</body>
+</html>

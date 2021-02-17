@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+{% extends 'Hospital/base.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}
+    Doctors
+    {% endblock title %}
+</head>
+<body>
+{% block content %}
+<div class="container mt-4">
+    <div class="doctors-list">
+        <div class="row text-center">
+            <div class="col-12">
+                <img src="{% static 'image/Speciality/Common-Banner-Header.png' %}" class="d-block w-100"
+                style="border-radius: 1.1rem;">
+            </div>
+        </div>
+        <div class="container my-4">
+            <div class="row text-left">
+                <div class="col-md-2 my-1">
+                    <img src="{% static 'image/All_Doctors/Dr.-Hemant.png' %}"
+                         title="Dr. Hemant Ingale" class="doctor-img w-100">
+                </div>
+                <div class="col-md-4 my-5">
+                    <h4><a href="{% url 'Hospital:general_medicine' %}">Dr. Hemant Ingale</a></h4>
+                    <small>General Medicine, Cardiology & Diabetology</small><br>
+                    <small>MBBS,DNB(Med.)</small><br>
+                    <a href="{% url 'Hospital:general_medicine' %}" class="btn btn-outline-dark btn-sm my-2">View
+                        More</a>
+                </div>
+                <div class="col-md-2 my-1">
+                    <img src="{% static 'image/All_Doctors/Dr.-Bhakti-Sarang.png' %}"
+                         title="Dr. Bhakti Sarang" class="doctor-img w-100">
+                </div>
+                <div class="col-md-4 my-5">
+                    <h4><a href="{% url 'Hospital:general_laparoscopic_surgery' %}">Dr. Bhakti Sarang</a></h4>
+                    <small>General Surgery</small><br>
+                    <small>MBBS,DNB(Fellow Trauma Surg)</small><br>
+                    <a href="{% url 'Hospital:general_laparoscopic_surgery' %}"
+                       class="btn btn-outline-dark btn-sm my-2">View More</a>
+                </div>
+            </div>
+
+            <div class="row text-left">
+                <div class="col-md-2 my-1">
+                    <img src="{% static 'image/All_Doctors/Mr_Doctordummy.png' %}"
+                         title="Dr. Ashish Jadhav" class="doctor-img w-100">
+                </div>
+                <div class="col-md-4 my-5">
+                    <h4><a href="#">Dr. Ashish Jadhav</a></h4>
+                    <small>General Surgery</small><br>
+                    <small>MS</small><br>
+                </div>
+                <div class="col-md-2 my-1">
+                    <img src="{% static 'image/All_Doctors/Mr_Doctordummy.png' %}"
+                         title="Dr. Ravi Jadhav" class="doctor-img w-100">
+                </div>
+                <div class="col-md-4 my-5">
+                    <h4><a href="#">Dr. Ravi Jadhav</a></h4>
+                    <small>General Surgery</small><br>
+                    <small>MS</small><br>
+                </div>
+            </div>
+
+            <div class="row text-left">
+                <div class="col-md-2 my-1">
+                    <img src="{% static 'image/All_Doctors/Dr-Kalpana.png' %}"
+                         title="Dr. Kalpana Gupta" class="doctor-img w-100">
+                </div>
+                <div class="col-md-4 my-5">
+                    <h4><a href="{% url 'Hospital:obstetrician_gynecologist' %}">Dr. Kalpana Gupta</a></h4>
+                    <small>Obstetrics & Gynecology</small><br>
+                    <small>MBBS, DNB, MNAMS, Fellowship in infertility(FOGSI)</small><br>
+                    <a href="#" class="btn btn-outline-dark btn-sm my-2">View More</a>
+                </div>
+                <div class="col-md-2 my-1">
+                    <img src="{% static 'image/All_Doctors/Dr.-Pradnya.png' %}"
+                         title="Dr. Pradnya Dongargaonkar" class="doctor-img w-100">
+                </div>
+                <div class="col-md-4 my-5">
+                    <h4><a href="{% url 'Hospital:obstetrician_gynecologist' %}">Dr. Pradnya Dongargaonkar</a></h4>
+                    <small>Obstetrics & Gynecology</small><br>
+                    <small>MBBS, MS</small><br>
+                    <a href="#" class="btn btn-outline-dark btn-sm my-2">View More</a>
+                </div>
+            </div>
+
+            <div class="row text-left">
+                <div class="col-md-2 my-1">
+                    <img src="{% static 'image/All_Doctors/Dr.Rahul-Jagtap.png' %}"
+                         title="Dr. Rahul Jagtap" class="doctor-img w-100">
+                </div>
+                <div class="col-md-4 my-5">
+                    <h4><a href="{% url 'Hospital:orthopedics' %}">Dr. Rahul Jagtap</a></h4>
+                    <small>Orthopedic</small><br>
+                    <small>MBBS, D.ORTHO, AFIH</small><br>
+                    <a href="#" class="btn btn-outline-dark btn-sm my-2">View More</a>
+                </div>
+                <div class="col-md-2 my-1">
+                    <img src="{% static 'image/All_Doctors/Mr_Doctordummy.png' %}"
+                         title="Dr. Chetan Chayed" class="doctor-img w-100">
+                </div>
+                <div class="col-md-4 my-5">
+                    <h4><a href="#">Dr. Chetan Chayed</a></h4>
+                    <small>Orthopedic</small><br>
+                    <small>MBBS, D. Ortho</small><br>
+                </div>
+            </div>
+
+            <div class="row text-left">
+                <div class="col-md-2 my-1">
+                    <img src="{% static 'image/All_Doctors/Mr_Doctordummy.png' %}"
+                         title="Dr. Atul Patil" class="doctor-img w-100">
+                </div>
+                <div class="col-md-4 my-5">
+                    <h4><a href="#">Dr. Atul Patil</a></h4>
+                    <small>Orthopedic</small><br>
+                    <small>MS</small><br>
+                </div>
+                <div class="col-md-2 my-1">
+                    <img src="{% static 'image/All_Doctors/Dr.Leela-Bose.png' %}"
+                         title="Dr. Leela Bose" class="doctor-img w-100">
+                </div>
+                <div class="col-md-4 my-5">
+                    <h4><a href="{% url 'Hospital:dermatology_skin_vd' %}">Dr. Leela Bose</a></h4>
+                    <small>Dermatology Skin & VD</small><br>
+                    <small>MBBS(BOM), DVD</small><br>
+                    <a href="{% url 'Hospital:dermatology_skin_vd' %}"
+                       class="btn btn-outline-dark btn-sm my-2">View More</a>
+                </div>
+            </div>
+
+            <div class="row text-left">
+                <div class="col-md-2 my-1">
+                    <img src="{% static 'image/All_Doctors/Mr_Doctordummy.png' %}"
+                         title="Dr. A. S. Deshmukh" class="doctor-img w-100">
+                </div>
+                <div class="col-md-4 my-5">
+                    <h4><a href="{% url 'Hospital:pediatrician_neonatologist' %}">Dr. A. S. Deshmukh</a></h4>
+                    <small>Pediatrician and Neonatologist</small><br>
+                    <small>MBBS, DCH, PGPN ( USA ,BOSTON), CC in TB, CC in Genetics</small><br>
+                    <a href="{% url 'Hospital:pediatrician_neonatologist' %}"
+                       class="btn btn-outline-dark btn-sm my-2">View More</a>
+                </div>
+                <div class="col-md-2 my-1">
+                    <img src="{% static 'image/All_Doctors/Mr_Doctordummy.png' %}"
+                         title="Dr. R. L. Borade" class="doctor-img w-100">
+                </div>
+                <div class="col-md-4 my-5">
+                    <h4><a href="{% url 'Hospital:pediatrician_neonatologist' %}">Dr. R. L. Borade</a></h4>
+                    <small>Pediatrician and Neonatologist</small><br>
+                    <small>MBBS, DCH, PGPN (University of Boston, USA)</small><br>
+                    <a href="{% url 'Hospital:pediatrician_neonatologist' %}"
+                       class="btn btn-outline-dark btn-sm my-2">View More</a>
+                </div>
+            </div>
+
+            <div class="row text-left">
+                <div class="col-md-2 my-1">
+                    <img src="{% static 'image/All_Doctors/Dr.-Sujata-Gawai.png' %}"
+                         title="Dr. Sujata Gawai" class="doctor-img w-100">
+                </div>
+                <div class="col-md-4 my-5">
+                    <h4><a href="{% url 'Hospital:ent' %}">Dr. Sujata Gawai</a></h4>
+                    <small>ENT</small><br>
+                    <small>MBBS, DNB</small><br>
+                    <a href="{% url 'Hospital:ent' %}"
+                       class="btn btn-outline-dark btn-sm my-2">View More</a>
+                </div>
+                <div class="col-md-2 my-1">
+                    <img src="{% static 'image/All_Doctors/Mr_Doctordummy.png' %}"
+                         title="Dr. Rachna Tiwary" class="doctor-img w-100">
+                </div>
+                <div class="col-md-4 my-5">
+                    <h4><a href="#">Dr. Rachna Tiwary</a></h4>
+                    <small>ENT</small><br>
+                    <small>MBBS, DORL, DNB</small><br>
+                </div>
+            </div>
+
+            <div class="row text-left">
+                <div class="col-md-2 my-1">
+                    <img src="{% static 'image/All_Doctors/Dr.-Yogita-Solanke--Shinde.png' %}"
+                         title="Dr. Yogita Solanke" class="doctor-img w-100">
+                </div>
+                <div class="col-md-4 my-5">
+                    <h4><a href="{% url 'Hospital:psychiatry' %}">Dr. Yogita Solanke</a></h4>
+                    <small>Psychiatrist</small><br>
+                    <small>MBBS, DPM ( Psychiatry)</small><br>
+                    <a href="{% url 'Hospital:psychiatry' %}"
+                       class="btn btn-outline-dark btn-sm my-2">View More</a>
+                </div>
+                <div class="col-md-2 my-1">
+                    <img src="{% static 'image/All_Doctors/Mr_Doctordummy.png' %}"
+                         title="Dr. Pushpa Borade" class="doctor-img w-100">
+                </div>
+                <div class="col-md-4 my-5">
+                    <h4><a href="#">Dr. Pushpa Borade</a></h4>
+                    <small>Radiology</small><br>
+                    <small>MBBS, DMRE(Fellow USG & Color Doppler at KEM Hospital Mumbai)</small><br>
+                </div>
+            </div>
+
+            <div class="row text-left">
+                <div class="col-md-2 my-1">
+                    <img src="{% static 'image/All_Doctors/Mr_Doctordummy.png' %}"
+                         title="Dr. Balakrishna Nagargoje" class="doctor-img w-100">
+                </div>
+                <div class="col-md-4 my-5">
+                    <h4><a href="#">Dr. Balakrishna Nagargoje</a></h4>
+                    <small>Anesthesiology</small><br>
+                    <small>MBBS, DA</small><br>
+                </div>
+                <div class="col-md-2 my-1">
+                    <img src="{% static 'image/All_Doctors/Mr_Doctordummy.png' %}"
+                         title="Dr. Shiwal Deshmukh" class="doctor-img w-100">
+                </div>
+                <div class="col-md-4 my-5">
+                    <h4><a href="#">Dr. Shiwal Deshmukh</a></h4>
+                    <small>Dentistry</small><br>
+                    <small>BDS</small><br>
+                </div>
+            </div>
+
+
+            <div class="row text-left">
+                <div class="col-md-2 my-1">
+                    <img src="{% static 'image/All_Doctors/Dr.-Nalini-Shinde.png' %}"
+                         title="Dr. Nalini Shinde" class="doctor-img w-100">
+                </div>
+                <div class="col-md-4 my-5">
+                    <h4><a href="{% url 'Hospital:physiotherapist' %}">Dr. Nalini Shinde</a></h4>
+                    <small>Physiotherapy</small><br>
+                    <small>B.Pth</small><br>
+                    <a href="{% url 'Hospital:physiotherapist' %}"
+                       class="btn btn-outline-dark btn-sm my-2">View More</a>
+                </div>
+                <div class="col-md-2 my-1">
+                    <img src="{% static 'image/All_Doctors/Dr.Vishal-Ganar.png' %}"
+                         title="Dr. Vishal Ganar" class="doctor-img w-100">
+                </div>
+                <div class="col-md-4 my-5">
+                    <h4><a href="{% url 'Hospital:psychology_and_counselling' %}">Dr. Vishal Ganar</a></h4>
+                    <small>Psychology</small><br>
+                    <small>PG - Psychology<br>
+                        PG - Guidance and Counselling<br>
+                        Mphil - Rehabilitation Psychology <br>
+                        PhD - Psychology
+                    </small><br>
+                    <a href="{% url 'Hospital:psychology_and_counselling' %}"
+                       class="btn btn-outline-dark btn-sm my-2">View More</a>
+                </div>
+            </div>
+
+
+            <div class="row text-left">
+                <div class="col-md-2 my-1">
+                    <img src="{% static 'image/All_Doctors/Mr_Doctordummy.png' %}"
+                         title="Dr. Amit Gharat" class="doctor-img w-100">
+                </div>
+                <div class="col-md-4 my-5">
+                    <h4><a href="#">Dr. Amit Gharat</a></h4>
+                    <small>Gastroenterology</small><br>
+                    <small>MD, DNB</small><br>
+                </div>
+                <div class="col-md-2 my-1">
+                    <img src="{% static 'image/All_Doctors/Dr-Jayendra-Giridhar-Yadav.png' %}"
+                         title="Dr. Jayendra Giridhar Yadav" class="doctor-img w-100">
+                </div>
+                <div class="col-md-4 my-5">
+                    <h4><a href="{% url 'Hospital:neurologist' %}">Dr. Jayendra Giridhar Yadav</a></h4>
+                    <small>Neurology</small><br>
+                    <small>MBBS, MD - General Medicine, DM - Neurology</small><br>
+                    <a href="{% url 'Hospital:neurologist' %}"
+                       class="btn btn-outline-dark btn-sm my-2">View More</a>
+                </div>
+            </div>
+
+
+            <div class="row text-left">
+                <div class="col-md-2 my-1">
+                    <img src="{% static 'image/All_Doctors/Mr_Doctordummy.png' %}"
+                         title="Dr. Mahesh Sambhare" class="doctor-img w-100">
+                </div>
+                <div class="col-md-4 my-5">
+                    <h4><a href="#">Dr. Mahesh Sambhare</a></h4>
+                    <small>Paed. Neurology</small><br>
+                    <small>MBBS, DCH, DNB</small><br>
+                </div>
+                <div class="col-md-2 my-1">
+                    <img src="{% static 'image/All_Doctors/Dr.Jitendra-Khandge.png' %}"
+                         title="Dr. Jitendra Khandge" class="doctor-img w-100">
+                </div>
+                <div class="col-md-4 my-5">
+                    <h4><a href="{% url 'Hospital:nephrology' %}">Dr. Jitendra Khandge</a></h4>
+                    <small>Nephrology</small><br>
+                    <small>MBBS, D.N.B(Nephrology)</small><br>
+                    <a href="{% url 'Hospital:nephrology' %}"
+                       class="btn btn-outline-dark btn-sm my-2">View More</a>
+                </div>
+            </div>
+
+
+            <div class="row text-left">
+                <div class="col-md-2 my-1">
+                    <img src="{% static 'image/All_Doctors/Dr-.Nishant-Kathale.png' %}"
+                         title="Dr. Nishant Kathale" class="doctor-img w-100">
+                </div>
+                <div class="col-md-4 my-5">
+                    <h4><a href="{% url 'Hospital:urology' %}">Dr. Nishant Kathale</a></h4>
+                    <small>Urology</small><br>
+                    <small>MBBS, DNB GENERAL SURGERY, DNB UROLOGY</small><br>
+                    <a href="{% url 'Hospital:urology' %}"
+                       class="btn btn-outline-dark btn-sm my-2">View More</a>
+                </div>
+                <div class="col-md-2 my-1">
+                    <img src="{% static 'image/All_Doctors/Mr_Doctordummy.png' %}"
+                         title="Dr. Ashish Dhande" class="doctor-img w-100">
+                </div>
+                <div class="col-md-4 my-5">
+                    <h4><a href="#">Dr. Ashish Dhande</a></h4>
+                    <small>Urology</small><br>
+                    <small>MS, MCh</small><br>
+                </div>
+            </div>
+
+            <div class="row text-left">
+                <div class="col-md-2 my-1">
+                    <img src="{% static 'image/All_Doctors/Dr.-Govind-Kendre.png' %}"
+                         title="Dr. Govind Kendre" class="doctor-img w-100">
+                </div>
+                <div class="col-md-4 my-5">
+                    <h4><a href="{% url 'Hospital:haematology_oncology' %}">Dr. Govind Kendre</a></h4>
+                    <small>Haematology & Oncology</small><br>
+                    <small>MBBS, MD(Paediatrics), <br>DM(Clinical Hematology)</small><br>
+                    <a href="{% url 'Hospital:haematology_oncology' %}"
+                       class="btn btn-outline-dark btn-sm my-2">View More</a>
+                </div>
+                <div class="col-md-2 my-1">
+                    <img src="{% static 'image/All_Doctors/Dr-Heman-Lahoti.png' %}"
+                         title="Dr. Hemant Lahoti" class="doctor-img w-100">
+                </div>
+                <div class="col-md-4 my-5">
+                    <h4><a href="{% url 'Hospital:pediatric_surgery' %}">Dr. Hemant Lahoti</a></h4>
+                    <small>Pediatric Surgery</small><br>
+                    <small>MBBS, MS - General Surgery, <br>MS - Paediatrics Surgery,<br>
+                        MCh - Pediatric Surgery
+                    </small><br>
+                    <a href="{% url 'Hospital:pediatric_surgery' %}"
+                       class="btn btn-outline-dark btn-sm my-2">View More</a>
+                </div>
+            </div>
+            <div class="row text-left">
+                <div class="col-md-2 my-1">
+                    <img src="{% static 'image/All_Doctors/Mr_Doctordummy.png' %}"
+                         title="Dr. Naresh Biyani" class="doctor-img w-100">
+                </div>
+                <div class="col-md-4 my-5">
+                    <h4><a href="#">Dr. Naresh Biyani</a></h4>
+                    <small>Pediatric Surgery</small><br>
+                    <small>MS, MCh (Neurosurgeon)</small><br>
+                </div>
+                <div class="col-md-2 my-1">
+                    <img src="{% static 'image/All_Doctors/Mr_Doctordummy.png' %}"
+                         title="Dr. Sagar Gundewar" class="doctor-img w-100">
+                </div>
+                <div class="col-md-4 my-5">
+                    <h4><a href="#">Dr. Sagar Gundewar</a></h4>
+                    <small>Plastic Surgery</small><br>
+                    <small>MS, MCh</small><br>
+                </div>
+            </div>
+            <div class="row text-left">
+                <div class="col-md-2 my-1">
+                    <img src="{% static 'image/All_Doctors/Dr.-Shama-Chohan-Shaikh.png' %}"
+                         title="Dr. Shama Chohan Shaikh" class="doctor-img w-100">
+                </div>
+                <div class="col-md-4 my-5">
+                    <h4><a href="{% url 'Hospital:dietitian_and_nutrition' %}">Dr. Shama Chohan Shaikh</a></h4>
+                    <small>Dietitian and Nutritionist</small><br>
+                    <small>MSC - (Clinical Nutrition and Dietetics) &<br>
+                        BSC - Graduated in Food Science and Nutrition
+                    </small><br>
+                    <a href="{% url 'Hospital:dietitian_and_nutrition' %}"
+                       class="btn btn-outline-dark btn-sm my-2">View More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+</body>
+</html>

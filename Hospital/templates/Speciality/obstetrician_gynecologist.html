@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+{% extends 'Hospital/base.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}
+    Obstetrician and Gynecologist
+    {% endblock title %}
+</head>
+<body>
+{% block content %}
+<div class="container mt-4">
+    <div class="speciality">
+        <div class="row text-center">
+            <div class="col-12">
+                <img src="{% static 'image/Speciality/Gynaecology Banner.jpg' %}" class="d-block w-100">
+            </div>
+            <h1>OBSTETRICS & GYNAECOLOGY</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-6 py-4">
+                <img src="{% static 'image/All_Doctors/Dr-Kalpana.png' %}" class="d-block w-100" alt="Image Not Found">
+                <h3><b>Dr. Kalpana Gupta</b></h3>
+                <h5><b>Consultant Obstetrics & Gynecology</b></h5>
+                <h6>MBBS, DNB, MNAMS, Fellowship in infertility(FOGSI)</h6>
+            </div>
+            <div class="col-md-6 py-4">
+                <p>
+                    Dr. Kalpana Gupta is practicing as an Obstetrician & Gynecologist since past 12 years. Her Vision of
+                    women and her health needs lead to Cradle Clinic which approaches women as a whole be it pregnancy,
+                    reproductive or sexual health issues. All of her needs are catered under one roof. She is an expert
+                    in managing complicated deliveries, high-risk Cesarean Section, Infertility Treatment(all kinds),
+                    Hysterectomy, PCOD treatment, and Laparoscopic Surgeries.
+                </p>
+                <p>
+                    Dr. Kalpana did her Post Graduate training in Obstetrics and Gynecology from prestigious Sir Ganga
+                    Ram Hospital, New Delhi. She is a Gold Medalist. She worked at Nowrosjee Wadia Maternity Hospital
+                    under Dr. M.S. Nanavati. Dr. Kalpana Gupta is a member of the Federation of Obstetric and
+                    Gynaecological Societies of India (FOGSI), AOGD and Navi Mumbai Obstetric & Gynecological Society
+                    (NMOGS).
+                </p>
+                <h3 style="text-align:left;"><b>Area Of Expertise</b></h3>
+                <ul type="square">
+                    <li>High-risk pregnancy care</li>
+                    <li>Infertility Treatment And Consultation</li>
+                    <li>Laparoscopy and Treatment</li>
+                    <li>Obstetric Treatment</li>
+                    <li>Fertility Treatment</li>
+                    <li>Gynecology Treatment</li>
+                    <li>Family Planning</li>
+                    <li>In General Cancer Prevention</li>
+                    <li>Adolescent Health Treatment</li>
+                </ul>
+            </div>
+        </div>
+        <hr size="10" style="color:#006fb5;">
+        <div class="row">
+            <div class="col-md-6 py-4">
+                <img src="{% static 'image/All_Doctors/Dr.-Pradnya.png' %}" class="d-block w-100" alt="Image Not Found">
+                <h3><b>Dr. Pradnya Dongargaonkar </b></h3>
+                <h5><b>Consultant Obstetrics & Gynecology</b></h5>
+                <h6>MBBS, MS</h6>
+            </div>
+            <div class="col-md-6 py-4">
+                <p>Maharashtra Medical Council Registration no:2015/03/0794</p>
+                <p>MBBS- 2015</p>
+                <p>MS OBGY -2020</p>
+                <p>ADVANCED DIPLOMA IN LAPAROSCOPY, UNIVERSITY OF SCHLESWIG HOLSTEIN- KEIL GERMANY in October 2020</p>
+                <h3 style="text-align:left;"><b>Area Of Expertise</b></h3>
+                <ul type="square">
+                    <li>Complete Antenatal  Care </li>
+                    <li>Treatment of gynaecological problems- Medical,</li>
+                    <li>Surgical, Laparoscopic.</li>
+                    <li>Family planning consultation.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+</body>
+</html>

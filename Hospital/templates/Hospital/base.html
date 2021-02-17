@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <title>{% block title %} {% endblock title %} | Sunrise Hospital</title>
+    <link rel="icon" type="image/gif" href="{% static 'image/Logo/Logo.png' %}">
+</head>
+<body style="font-family:times new roman;">
+<nav class="top-bar mt-1">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-sm-12 col-md-5">
+                <p class="text-left">Shiv Kalpataru Arcade, Plot 1, Sector - 17, Kamothe, Navi Mumbai</p>
+            </div>
+            <div class="col-sm-12 col-md-4 text-center">
+                <ul class="social">
+                    <li>
+                        <a href="https://www.linkedin.com/" target="_blank">
+<!--                            <i style="color: #0e76a8;" class="fab fa-linkedin-in fa-2x" title="LinkedIn"></i>-->
+                            <img src="{% static 'image/LinkedIn.png' %}" title="LinkedIn" alt="LinkedIn" width="40" height="40">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <img src="{% static 'image/facebook.png' %}" title="Facebook" alt="Facebook" width="40" height="40">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <img src="{% static 'image/IG.png' %}" title="Instagram" alt="Instagram" width="40" height="40">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/" target="_blank">
+                            <img src="{% static 'image/Twitter.png' %}" title="Twitter" alt="Twitter" width="40" height="40">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-12 col-md-3">
+                <p class="text-right">Tel: 022-27431050, +91-89760-31050</p>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="marquee-msg">
+    <marquee onMouseOver="this.stop()" onMouseOut="this.start()"
+             behavior="scroll" scrollamount="10" direction="left" loop="">
+        Sunrise Multispeciality is Now Non-COVID Hospital, OPD and IPD of all Department are Functional With
+        Cashless Facilities.
+    </marquee>
+</div>
+<nav class="navbar navbar-expand-lg navbar-custom sticky-lg-top sticky-sm-top sticky-md-top">
+    <div class="container">
+        <a href="/" class="navbar-brand">
+            <img src="{% static 'image/Logo/Logo.png' %}" title="Logo" alt="Logo">
+        </a>
+        <!--        <p style="text-align:left;">Sunrise <br>Multispecislity Hospital</p>-->
+        <button class="navbar-toggler ml-auto custom-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" aria-current="page" href="/">Home</a>
+                </li>
+                <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownSpeciality" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        Speciality
+                    </a>
+                    <ul class="dropdown-menu dropdown-custom-menu" aria-labelledby="dropdownSpeciality">
+                        <li>
+                            <a class="dropdown-item" href="{% url 'Hospital:general_medicine' %}">
+                                General Medicine
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="{% url 'Hospital:pediatrician_neonatologist' %}">
+                                Pediatrician & Neonatology
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="{% url 'Hospital:obstetrician_gynecologist' %}">
+                                Obstetrician & Gynecology
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="{% url 'Hospital:general_laparoscopic_surgery' %}">
+                                General Surgery & Laparoscopic Surgery
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="{% url 'Hospital:orthopedics' %}">
+                                Orthopedics
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="{% url 'Hospital:dermatology_skin_vd' %}">
+                                Dermatology Skin & VD
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="{% url 'Hospital:ent' %}">
+                                ENT
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="{% url 'Hospital:psychiatry' %}">
+                                Psychiatry
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="{% url 'Hospital:psychology_and_counselling' %}">
+                                Psychology and Counselling
+                            </a>
+                        </li>
+                        <li><a class="dropdown-item" href="{% url 'Hospital:physiotherapist' %}">Physiotherapy</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownSuperSpeciality" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        Super Speciality
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownSuperSpeciality">
+                        <li>
+                            <a class="dropdown-item" href="{% url 'Hospital:neurologist' %}">
+                                Neurology
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="{% url 'Hospital:nephrology' %}">
+                                Nephrology
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="{% url 'Hospital:haematology_oncology' %}">
+                                Hematology & Oncology
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="{% url 'Hospital:urology' %}">
+                                Urology
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="{% url 'Hospital:pediatric_surgery' %}">
+                                Paediatric Surgery
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="{% url 'Hospital:plastic_surgeon' %}">
+                                Plastic Surgery
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="{% url 'Hospital:dietitian_and_nutrition' %}">
+                                Dietitian & Nutrition
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'Hospital:about' %}">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'Hospital:doctors' %}">Doctor</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'Hospital:tpa_insurances' %}">TPA Insurance</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'Hospital:contact' %}">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+{% block content %}
+
+{% endblock content %}
+<footer>
+    <div class="mt-5">
+        <nav class="navbar-custom">
+            <div class="container-fluid">
+                <div class="row py-4">
+                    <div class="col-md-4">
+                        <h1 class="text-center">Departments</h1>
+                        <ul>
+                            <li>
+                                <a href="{% url 'Hospital:general_medicine' %}">
+                                    &#128073;&nbsp; General Medicine</a>
+                            </li>
+                            <li>
+                                <a href="{% url 'Hospital:pediatrician_neonatologist' %}">
+                                    &#128073;&nbsp; Pediatric & Neonatology</a>
+                            </li>
+                            <li>
+                                <a href="{% url 'Hospital:obstetrician_gynecologist' %}">
+                                    &#128073;&nbsp; Gynecology & Obstetrics</a>
+                            </li>
+                            <li>
+                                <a href="{% url 'Hospital:general_laparoscopic_surgery' %}">
+                                    &#128073;&nbsp; General & Laparoscopic Surgery</a>
+                            </li>
+                            <li>
+                                <a href="{% url 'Hospital:orthopedics' %}">&#128073;&nbsp; Orthopedics</a>
+                            </li>
+                            <li>
+                                <a href="{% url 'Hospital:dermatology_skin_vd' %}">&#128073;&nbsp; Dermatology Skin and
+                                    VD </a>
+                            </li>
+                            <li>
+                                <a href="{% url 'Hospital:ent' %}">&#128073;&nbsp; ENT</a>
+                            </li>
+                            <li>
+                                <a href="{% url 'Hospital:psychiatry' %}">&#128073;&nbsp; Psychiatry</a>
+                            </li>
+                            <li>
+                                <a href="{% url 'Hospital:physiotherapist' %}">&#128073;&nbsp; Physiotherapy</a>
+                            </li>
+                            <li>
+                                <a href="{% url 'Hospital:psychology_and_counselling' %}">&#128073;&nbsp; Psychology and
+                                    Counselling</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h1></h1><br><br>
+                        <ul>
+                            <li>
+                                <a href="{% url 'Hospital:neurologist' %}">&#128073;&nbsp; Neurology</a>
+                            </li>
+                            <li>
+                                <a href="{% url 'Hospital:nephrology' %}">&#128073;&nbsp; Nephrology</a>
+                            </li>
+                            <li>
+                                <a href="{% url 'Hospital:haematology_oncology' %}">&#128073;&nbsp; Haematology
+                                    &Oncology</a>
+                            </li>
+                            <li>
+                                <a href="{% url 'Hospital:urology' %}">&#128073;&nbsp; Urology</a>
+                            </li>
+                            <li>
+                                <a href="{% url 'Hospital:pediatric_surgery' %}">&#128073;&nbsp; Pediatric Surgery</a>
+                            </li>
+                            <li>
+                                <a href="{% url 'Hospital:plastic_surgeon' %}">&#128073;&nbsp; Plastic Surgery</a>
+                            </li>
+                            <li>
+                                <a href="{% url 'Hospital:dietitian_and_nutrition' %}">&#128073;&nbsp; Dietitian &
+                                    Nutrition</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h1 class="text-center">Contact Us</h1>
+                        <div class="row">
+                            <div class="col-md-2">
+<!--                                <i class="fas fa-map-marker-alt fa-2x mt-3 center"></i>-->
+                                <img src="{% static 'image/White-location.png' %}" title="Location" class="footer-icon-image"
+                                     alt="Location" width="50" height="45">
+                            </div>
+                            <div class="col-md-10">
+                                <p class="text-align: justify;">
+                                    Shiv Kalpataru Arcade, Plot 1, Sector - 17, <br>Kamothe, Navi Mumbai, Maharashtra
+                                    410206</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2">
+<!--                                <i class="fas fa-phone-alt fa-2x mt-1 center"></i>-->
+                                <img src="{% static 'image/white-Calling.png' %}" title="call" class="footer-icon-image"
+                                     alt="call" width="50" height="45">
+                            </div>
+                            <div class="col-md-10">
+                                <p>022-27431050, 983320483, 8976031050, 8928689509</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2">
+<!--                                <i class="fas fa-envelope fa-2x center"></i>-->
+                                <img src="{% static 'image/White-Email.png' %}" title="Email" class="footer-icon-image"
+                                     alt="Email" width="50" height="45">
+                            </div>
+                            <div class="col-md-10">
+                                <p class="mt-1">sunrisemultispecialityhospital@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="container mapouter mt-3">
+                                    <div class="gmap_canvas">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3772.0667738364446!2d73.08435831454996!3d19.016779058773803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c27f6b8b3a63%3A0x39774c600cd06365!2sSunrise%20Multispeciality%20Hospital!5e0!3m2!1sen!2sin!4v1612097440209!5m2!1sen!2sin"
+                                                width="100%" height="200" frameborder="0" allowfullscreen=""
+                                                aria-hidden="false" tabindex="0">
+                                        </iframe>
+                                        <a href="https://yt2.org"></a><br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!--            <div class="btn-group w-100 fixed-bottom " role="group" aria-label="Basic mixed styles example">-->
+<!--                <button type="button" class="btn btn-block phone-custom">-->
+<!--                    <a href="tel:+022-27431050">-->
+<!--                        <i class="fas fa-phone-alt fa-2x i-size" title="Phone"></i>-->
+<!--                        <span class="d-none d-md-inline"></span>-->
+<!--                    </a>-->
+<!--                </button>-->
+<!--                <button type="button" class="btn btn-block facebook-custom">-->
+<!--                    <a href="https://www.facebook.com/" target="_blank">-->
+<!--                        <i class="fab fa-facebook-f fa-2x i-size" title="Facebook"></i>-->
+<!--                    </a>-->
+<!--                </button>-->
+<!--                <button type="button" class="btn btn-block insta-custom">-->
+<!--                    <a href="https://www.instagram.com/" target="_blank">-->
+<!--                        <i class="fab fa-instagram fa-2x i-size" title="Instagram"></i>-->
+<!--                    </a>-->
+<!--                </button>-->
+<!--                &lt;!&ndash;                <button type="button" class="btn btn-block linkedin-custom">&ndash;&gt;-->
+<!--                &lt;!&ndash;                    <a href="https://www.linkedin.com/" target="_blank">&ndash;&gt;-->
+<!--                &lt;!&ndash;                        <i class="fab fa-linkedin-in fa-2x i-size" title="LinkedIn"></i>&ndash;&gt;-->
+<!--                &lt;!&ndash;                    </a>&ndash;&gt;-->
+<!--                &lt;!&ndash;                </button>&ndash;&gt;-->
+<!--                <button type="button" class="btn btn-block whatsapp-custom">-->
+<!--                    <a href="https://www.whatsapp.com/" target="_blank">-->
+<!--                        <i class="fab fa-whatsapp fa-2x i-size" title="Whatsapp"></i>-->
+<!--                    </a>-->
+<!--                </button>-->
+<!--            </div>-->
+        </nav>
+    </div>
+</footer>
+<script src="{% static 'js/smooth-scroll.js' %}"></script>
+<script src="{% static 'js/my.js' %}"></script>
+<script>
+  var scroll = new SmoothScroll('a[href*="#"]');
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+<!--class="btn-group btn-group-justified w-100 fixed-bottom sticky" role="group" aria-label="Justified button group"-->

@@ -1,0 +1,593 @@
+body {
+    overflow-x: hidden;
+    font-family: Times New Roman;
+    color: #616971;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+marquee {
+    color: white;
+    background: #006fb5;
+    width: 100%;
+    height: 1.8rem;
+    font-size: 1.2rem;
+}
+
+/* ------------------------ Navigation Section ----------------------------------------------------------*/
+
+.top-bar {
+        background: white;
+}
+
+.top-bar .social img:hover{
+    border-radius: .4rem;
+    box-shadow: 0 0 0 .2rem rgba(0, 0, 0, 0.15);
+
+}
+
+
+.top-bar p{
+    color: #616971;
+    font-weight: normal;
+}
+
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url( "data:image/svg+xml;charset=utf8,<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'><path stroke='rgba(255, 255, 255, 10)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/></svg>");
+    color: red;
+}
+
+.navbar-brand img {
+    height: 4.5rem;
+}
+
+.navbar {
+    font-size: 1rem;
+    font-weight: 100;
+    letter-spacing: .1rem;
+    box-shadow:  0 .5rem .5rem rgba(0,0,0,.1);
+    z-index: 1;
+}
+
+.navbar-custom{
+    background: #006fb5;
+}
+
+
+.nav-item {
+    padding: .5rem;
+}
+
+.nav-link {
+    color: #f4f5f7 !important;
+}
+
+.nav-link.active, .nav-link:hover {
+    color: #2F2D2E !important;
+}
+
+
+.social {
+    list-style-type: none;
+    display: flex;
+    max-width: 16rem;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    padding: 0;
+}
+
+.social i:hover{
+     line-height: 1rem;
+}
+
+.social li{
+    margin: 0 auto;
+}
+/* ------------------------ End Navigation Section ----------------------------------------------------------*/
+
+/* ------------------------ Image Carousel Section ----------------------------------------------------------*/
+#carousel {
+    box-shadow:  0 1rem 1rem rgba(0,0,0,.1);
+}
+
+#carousel:hover {
+    box-shadow:  0 1rem 1rem rgba(0,0,0,.2);
+}
+
+.carousel-inner {
+    max-height: 38rem !important;
+}
+
+.carousel-item-prev,
+.carousel-item-next,
+.carousel-item.active{
+    transition: transform 1.2s ease;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 10%;
+    color: white;
+    transform: translateX(30%);
+    text-transform: uppercase;
+}
+
+.carousel-caption p, h5, small {
+    color: black;
+    font-weight: 600;
+}
+
+.carousel-caption h1{
+    font-size: 2.5rem;
+    color: black;
+
+}
+
+.carousel-caption h5{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.carousel-caption small{
+    font-size: .9rem;
+
+}
+
+.carousel-caption p{
+    font-size: .9rem;
+}
+
+.btn-lg{
+    border-radius: .5rem;
+    color: black;
+    background: rgba(255,255,255, .8);
+}
+
+.btn-lg:focus{
+    outline: none;
+}
+
+.btn-lg:active {
+    outline: none;
+    border: none;
+}
+
+.btn-lg:hover{
+    background: rgba(0,0,0,.7) !important;
+    color: white;
+}
+.bg-custom {
+    background: rgba(192,192,192, .5);
+    color: black;
+    border-radius: 1rem;
+}
+
+
+/* ------------------------ End Image Carousel Section ----------------------------------------------------------*/
+
+/* ------------------------ Services Section ----------------------------------------------------------*/
+.card {
+    box-shadow:  0 1rem 1rem rgba(0,0,0,.1);
+}
+
+.card:hover {
+    box-shadow:  0 1rem 1rem rgba(0,0,0,.2);
+}
+
+#services p{
+    color: #616971;
+    font-size: 1.2rem;
+    text-align: justify;
+    font-weight: normal;
+}
+
+#services h5{
+    color: #616971;
+    text-align: center;
+}
+
+
+/* ------------------------ End Services Section ----------------------------------------------------------*/
+
+/* ------------------------ Testimonials Section ----------------------------------------------------------*/
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 2.5rem;
+    width: 2.5rem;
+    outline: black;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+}
+
+.carousel-control-prev-icon:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-control-next-icon:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.testimonials .carousel-caption {
+    top: 50;
+    bottom: 50;
+    transform: translateX(30%);
+    text-transform: uppercase;
+}
+
+
+/* ------------------------ End Services Section ----------------------------------------------------------*/
+
+/* ------------------------- Speciality Section -------------------------------------------------------*/
+/* ------------------------ Speciality and Super Speciality Section ----------------------------------------*/
+
+.speciality h1{
+    padding-top: 1.5rem;
+    font-size: 3.5rem;
+    text-shadow: 0 .1rem .3rem rgb(0,99,160);
+    text-transform: uppercase;
+}
+
+.speciality h3{
+    padding-top: 1rem;
+    color:#006fb5;
+    text-align: center;
+}
+
+.speciality h5,h6{
+    color:#006fb5;
+    text-align: center;
+}
+
+
+.speciality ul li {
+    font-size: 1.2rem;
+}
+
+.speciality img {
+    border-radius: 1.1rem;
+}
+.speciality img:hover {
+    box-shadow:  0 1rem 1rem rgba(0,0,0,.1);
+}
+
+.speciality p {
+    font-size: 1.2rem;
+    color:#006fb5;
+    font-weight: normal;
+    text-align:justify;
+}
+
+.speciality ul li {
+    color:#006fb5;
+}
+/* ------------------------ End General Medicine Section ----------------------------------------------------------*/
+
+
+/* ------------------------- Doctors Section -------------------------------------------------------*/
+.doctors-list .doctor-img{
+    border-radius: 50%;
+    cursor: pointer;
+}
+.doctors-list a{
+    text-decoration: none;
+}
+
+.doctors-list small{
+    color: #616971;
+    font-weight: normal;
+}
+
+
+
+/* ------------------------- End Doctors Section -------------------------------------------------------*/
+
+/* ------------------------- AboutUs Section -------------------------------------------------------*/
+.about-us h1{
+    padding-top: 1.5rem;
+    font-size: 3.5rem;
+    text-shadow: 0 .1rem .3rem rgb(0,99,160);
+    text-transform: uppercase;
+}
+
+.about-us img{
+    border-radius: 1.1rem;
+}
+
+.home-about p {
+    color: #616971;
+    text-align: justify;
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+/* ------------------------- End AboutUs Section -------------------------------------------------------*/
+
+/* ------------------------- End TPA and Insurance Section -------------------------------------------------------*/
+
+
+.tpa-insurance h3, h1{
+    color: #006fb5;
+    text-transform: uppercase;
+}
+
+.tpa-insurance img{
+    cursor: pointer;
+}
+
+
+.home-insurances img{
+    cursor: pointer;
+}
+/* ------------------------- End TPA and Insurance Section -------------------------------------------------------*/
+
+/* ------------------------- End Email Section -------------------------------------------------------*/
+.email-section {
+    padding: 0;
+    margin: 0 auto;
+    background: #bf5b04;
+    padding-bottom: 1rem;
+
+}
+
+.email-section h3 {
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+}
+
+.email-section input[type=text] {
+  width: 100%;
+  padding: .5rem 1rem;
+  margin: 8px 0;
+  display: inline-block;
+  border: .1rem solid white;
+  border-radius: .5rem;
+  box-sizing: border-box;
+}
+
+.email-section input:focus{
+    outline: none;
+    border: .1rem solid black;
+}
+.email-section .btn {
+    letter-spacing: .1rem;
+    border-radius: .5rem;
+}
+
+.email-section label{
+    color: white;
+}
+
+
+/* ------------------------- End Email Section -------------------------------------------------------*/
+
+/* ------------------------- Footer Section -------------------------------------------------------*/
+footer li{
+    list-style-type: none;
+    margin-left: 0 auto;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: .1rem;
+}
+
+footer h1{
+    color: white;
+}
+
+footer i,p{
+    color: white;
+    padding: .1rem;
+}
+
+footer a:hover{
+    color: black;
+}
+
+footer .center{
+    margin-bottom: .5rem;
+}
+footer .phone-custom {
+    background: rgb(0,200,0);
+}
+footer .facebook-custom {
+    background: rgb(0,0,200);
+}
+
+footer .insta-custom {
+    background: rgb(188,42,141)
+}
+
+footer .linkedin-custom {
+    background: #0e76a8;
+}
+
+footer .whatsapp-custom {
+    background: #81F499;
+}
+footer .social-icon-display{
+    display: none;
+}
+
+/* ------------------------- End Footer Section -------------------------------------------------------*/
+
+
+/* -------------------------  Contact Section -------------------------------------------------------*/
+
+.home-contact-us {
+    color: #006fb5;
+}
+
+/* ------------------------- End Contact Section -------------------------------------------------------*/
+
+/* ------------------------ Media Section ----------------------------------------------------------*/
+@media ( max-width: 1199.98px) {
+.carousel-caption h1{
+    font-size: 1.5rem;
+}
+
+.carousel-caption h5{
+    font-size: 1rem;
+}
+
+.carousel-caption small{
+    font-size: .7rem;
+}
+.btn-lg{
+    font-size: 1rem;
+}
+.carousel-caption p{
+    font-size: .7rem;
+}
+
+.about-us h1{
+    font-size: 2.5rem;
+}
+.speciality h1{
+    font-size: 2.5rem;
+}
+
+.speciality p {
+    font-size: 1rem;
+    text-align: center;
+}
+.email-section input[type=text] {
+  width: 50%;
+}
+.social {
+    font-size: .8rem;
+}
+footer i{
+    font-size: 2.5rem;
+}
+}
+
+@media ( max-width: 991.98px) {
+.carousel-caption h1{
+    font-size: 1.4rem;
+}
+
+.carousel-caption h5{
+    font-size: 1rem;
+}
+
+.carousel-caption small{
+    font-size: .5rem;
+}
+.btn-lg{
+    font-size: 1rem;
+}
+.carousel-caption p{
+    font-size: .5rem;
+}
+.about-us h1{
+    font-size: 2rem;
+}
+
+.speciality h1{
+    font-size: 2.3rem;
+}
+
+.speciality p {
+    font-size: 1rem;
+}
+
+.email-section h3 {
+    font-size: 1.1rem;
+    text-align: left;
+}
+.email-section input[type=text] {
+  width: 65%;
+}
+.email-section .subscribe-btn {
+    margin-right: 11.3rem;
+}
+.social {
+    font-size: .5rem;
+}
+footer p{
+    font-size: .8rem;
+}
+
+.speciality p {
+    text-align: justify;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+footer i,p{
+    color: white;
+    padding: .2rem;
+    text-align: left;
+}
+
+footer .footer-icon-image{
+    text-align: center;
+    margin-left: 11rem;
+
+}
+footer p{
+    font-size: 1rem;
+    text-align: center;
+}
+footer .center {
+    text-align: left;
+    width: 100%;
+}
+.top-bar p{
+    text-align: center;
+}
+.top-bar .social li i{
+    text-center: left;
+}
+.navbar-brand img {
+    height: 3.5rem;
+}
+.nav-item {
+    padding: .1rem;
+}
+.dropdown-custom-menu a{
+    padding: 0,0,.5rem,.1rem;
+}
+
+footer .center,p{
+    text-align: center;
+}
+
+footer .callable-button{
+    display: block;
+    padding-left: 1rem;
+}
+
+.home-contact-us h3,p{
+    text-align: left;
+}
+.home-contact-us h3{
+    font-size: 1.5rem;
+}
+footer .btn-group{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+footer .btn-group .i-size{
+    font-size: 2rem;
+}
+footer .social-icon-display{
+    display: block;
+    text-align: center;
+}
+}
+/* ------------------------ End Media Section ----------------------------------------------------------*/

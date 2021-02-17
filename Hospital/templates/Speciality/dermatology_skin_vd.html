@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+{% extends 'Hospital/base.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}
+    Dermatology Skin & VD
+    {% endblock title %}
+</head>
+<body>
+{% block content %}
+<div class="container mt-4">
+    <div class="speciality">
+        <div class="row text-center">
+            <div class="col-12">
+                <img src="{% static 'image/Speciality/Dermatology Skin & VD.jpg' %}"
+                     class="d-block w-100">
+            </div>
+            <h1>Dermatology Skin & VD</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-6 py-4">
+                <img src="{% static 'image/All_Doctors/Dr.Leela-Bose.png' %}" class="d-block w-100">
+                <h3><b>Dr. Leela Bose</b></h3>
+                <h5><b>Consulting Dermatologist, Trichologist and Cosmetologist</b></h5>
+                <h6>MBBS(Bom), DVD</h6>
+            </div>
+            <div class="col-md-6 py-4">
+                <p>
+                    Dr.Leela Bose has been practicing in Navi -Mumbai, Maharashtra since last 15 years.She has been
+                    striving to offer the best skin & hair treatments. Aesthetic procedures carried out by her have a
+                    long list of happy & satisfied patients. Her main forte of treatments are hair & face PRP, Botox &
+                    fillers & hair transplantation,etc.
+                </p>
+                <h3 style="text-align:left;"><b>Area Of Expertise</b></h3>
+                <ul type="square">
+                    <li>Hair transplantation</li>
+                    <li>Hair PRP for controlling hair loss</li>
+                    <li>
+                        All facial aesthetic procedures like face PRP, botox, fillers, thread lift as a part of
+                        anti-aging procedures
+                    </li>
+                    <li>Electrocautery for warts, skin tags</li>
+                    <li>Acne treatment</li>
+                    <li>All laser procedures for hair removal, acne scar treatment.</li>
+                    <li>Vitiligo treatment</li>
+                    <li>Tattoo removal</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+</body>
+</html>

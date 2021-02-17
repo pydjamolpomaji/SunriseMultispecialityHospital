@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+{% extends 'Hospital/base.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}
+    Pediatric Surgery
+    {% endblock title %}
+</head>
+<body>
+{% block content %}
+<div class="container mt-4">
+    <div class="speciality">
+        <div class="row text-center">
+            <div class="col-12">
+                <img src="{% static 'image/Speciality/Common-Banner-Header.png' %}"
+                     class="d-block w-100">
+            </div>
+            <h1>Pediatric Surgery</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-6 py-4">
+                <img src="{% static 'image/All_Doctors/Dr-Heman-Lahoti.png' %}" class="d-block w-100">
+                <h3><b>Dr. Hemant Lahoti</b></h3>
+                <h5><b>Pediatric Surgeon</b></h5>
+                <h6>
+                    MBBS, MS - General Surgery, MS - Paediatrics Surgery,<br>
+                    MCh - Pediatric Surgery
+                </h6>
+            </div>
+            <div class="col-md-6 py-4">
+                <p>
+                    Dr. Hemant Lahoti is a Pediatric Rehabilitation Medicine Specialist, General Physician and Pediatric
+                    Surgeon in Nerul, Navi Mumbai and has experience of 21 years in these fields.
+                </p>
+                <p>
+                    Dr. Hemant Lahoti is a very renowned pediatric surgeon, having the expertise of doing complex
+                    pediatrics surgery. He is having exp of more than 21 years in this field. He has completed MCh
+                    pediatric Surgery from prestigious King Edward Memorial Hospital and Seth Gordhandas Sunderdas
+                    Medical College, Mumbai in 2003.
+                </p>
+                <p>
+                    He is a member of Maharastra Medical Council and Member, Indian Association of Pediatric Surgeons.
+                </p>
+                <h3 style="text-align:left;"><b>Area Of Expertise</b></h3>
+                <ul type="square">
+                    <li>Circumcision</li>
+                    <li>Appendectomy</li>
+                    <li>Hernia</li>
+                    <li>Hydrocole</li>
+                    <li>Intusuception</li>
+                    <li>Toungue tie</li>
+                    <li>Cholecystectomy</li>
+                    <li>Orchidopexy ( for undescended Testis)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+</body>
+</html>

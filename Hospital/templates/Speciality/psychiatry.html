@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+{% extends 'Hospital/base.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}
+    Psychiatry
+    {% endblock title %}
+</head>
+<body>
+{% block content %}
+<div class="container mt-4">
+    <div class="speciality">
+        <div class="row text-center">
+            <div class="col-12">
+                <img src="{% static 'image/Speciality/Psychiatry.jpg' %}"
+                     class="d-block w-100">
+            </div>
+            <h1>Psychiatry</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-6 py-4">
+                <img src="{% static 'image/All_Doctors/Dr.-Yogita-Solanke--Shinde.png' %}" class="d-block w-100">
+                <h3><b>Dr. Yogita Solanke</b></h3>
+                <h5><b>Consultant Psychiatrist</b></h5>
+                <h6>MBBS, DPM ( Psychiatry)</h6>
+            </div>
+            <div class="col-md-6 py-4">
+                <p>
+                    Dr. Yogita Solanke- Shinde MBBS, DPM ( Psychiatry) Consultant Psychiatrist and therapist practicing
+                    for more than 12 years. She is specialized doctor in psychological health,
+                    Which involves the diagnosis and treatment along with counseling of all types of emotional and
+                    behavioral disorders including sexual disorders and substance addiction.
+                </p>
+                <p>
+                    Dr. Yogita is a certified expert in REBT and CBT, and Tobacco and alcohol cessation program.
+                </p>
+                <p>
+                    She has been a speaker in various academic and awareness programs such as depression, adolescence
+                    behaviour problems and many more. Dr. Yogita is part of Indian Association of Psychiatry Society,
+                    Indian Association of Private Psychiatry Society, Bombay Psychiatry Society and Raigarh Psychiatry
+                    Society, गाव तिथे मानसोपचार and many others
+                </p>
+                <h3 style="text-align:left;"><b>Area Of Expertise</b></h3>
+                <ul type="square">
+                    <li>EEG</li>
+                    <li>Premarital and marital Counseling</li>
+                    <li>Treatment of depression, Anxiety and Psychosis</li>
+                    <li>Adolescence Counseling</li>
+                    <li>De-addiction of Alcohol and Tobacco and other substances</li>
+                    <li>Treatment of Memory Problem</li>
+                    <li>Treatment of increasing concentration</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+</body>
+</html>

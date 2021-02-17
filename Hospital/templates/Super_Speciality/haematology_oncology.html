@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+{% extends 'Hospital/base.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}
+    Haematology & Oncology
+    {% endblock title %}
+</head>
+<body>
+{% block content %}
+<div class="container mt-4">
+    <div class="speciality">
+        <div class="row text-center">
+            <div class="col-12">
+                <img src="{% static 'image/Speciality/Common-Banner-Header.png' %}"
+                     class="d-block w-100">
+            </div>
+            <h1>Haematology & Oncology</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-6 py-4">
+                <img src="{% static 'image/All_Doctors/Dr.-Govind-Kendre.png' %}" class="d-block w-100">
+                <h3><b>Dr. Govind Kendre</b></h3>
+                <h5><b>Consultant Haematology</b></h5>
+                <h6>MBBS, MD(Paediatrics), DM(Clinical Hematology)</h6>
+            </div>
+            <div class="col-md-6 py-4">
+                <p>
+                    Dr. Govind Kendre is a Super-specialist in the field of Clinical Haematology. He has completed his
+                    DM in Clinical Haematology from Seth G.S. Medical College, Mumbai in the year 2018. He has completed
+                    his MD in Paediatric Medicine from LTMMC, Sion, Mumbai in the year 2014. Further, he has also gained
+                    experience in Bone Marrow Transplant from TATA Memorial Centre, ACTREC, Mumbai.
+                </p>
+                <p>
+                    He is brilliant in his thought process in diagnosing complicated cases and treating different types
+                    of haematology cases with special interests in acute & chronic Leukemia, Lymphoma, multiple myeloma,
+                    aplastic anemia, haemophilia, thalassemia, sickle cell disease, ITP& DVT.
+                </p>
+                <p>
+                    Key Skills & Experience :
+
+                    Dr. Govind Kendre has vast experience in treating patients of all Haematology related cases. He has
+                    been handling patients of leukemia, lymphoma, different types of anemias & bleeding disorders. After
+                    completion of DM, he has worked as an assistant Professor of Clinical Hematology at KEM Hospital,
+                    Mumbai for 2 years with teaching experience and research activity.
+                </p>
+                <p>
+                    He is proficient in performing bone marrow aspiration & biopsy procedure, Lumbar Puncture, Central
+                    Vein catheterization, Exchange transfusion and scheduling appropriate Chemotherapy.His clinical
+                    judgment and analytical abilities are exceptional.
+                </p>
+                <h3 style="text-align:left;"><b>Area Of Expertise</b></h3>
+                <ul type="square">
+                    <li>Blood Cancer</li>
+                    <li>Bleeding Disorder</li>
+                    <li>Bone marrow aspiration and biopsy procedure</li>
+                    <li>Impractical Chemotherapy</li>
+                    <li>All blood diseases</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+</body>
+</html>

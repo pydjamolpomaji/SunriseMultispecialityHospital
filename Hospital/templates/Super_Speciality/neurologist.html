@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+{% extends 'Hospital/base.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}
+    Neurology
+    {% endblock title %}
+</head>
+<body>
+{% block content %}
+<div class="container mt-4">
+    <div class="speciality">
+        <div class="row text-center">
+            <div class="col-12">
+                <img src="{% static 'image/Speciality/Common-Banner-Header.png' %}"
+                     class="d-block w-100">
+            </div>
+            <h1>Neurology</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-6 py-4">
+                <img src="{% static 'image/All_Doctors/Dr-Jayendra-Giridhar-Yadav.png' %}" class="d-block w-100">
+                <h3><b>Dr. Jayendra Giridhar Yadav</b></h3>
+                <h5><b>Consultant Neurology</b></h5>
+                <h6>MBBS, MD - General Medicine, DM - Neurology</h6>
+            </div>
+            <div class="col-md-6 py-4">
+                <p>
+                    A neurologist is essentially dealt with all sorts of neurological disorders. Disorders of brain
+                    peripheral nerves muscles and spinal cord are diagnosed and managed by a neurologist.
+                    Neurological disorders need an early and correct diagnosis,failure of which can lead to lifelong
+                    disability
+                </p>
+                <p>
+                    Common neurology disorders that are managed by a neurologist include stroke migraine and other
+                    Headache disorders neuropathy vertigo Myelopathy vision loss
+                    Imbalance.
+                </p>
+                <h3 style="text-align:left;"><b>Area Of Expertise</b></h3>
+                <ul type="square">
+                    <li>Epilepsy Treatment</li>
+                    <li>Stroke Treatment</li>
+                    <li>Spinal Disorders</li>
+                    <li>Electromyography (EMG)</li>
+                    <li>Neuromuscular Disorder</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+</body>
+</html>

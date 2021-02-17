@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+{% extends 'Hospital/base.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}
+    Psychology and Counselling
+    {% endblock title %}
+</head>
+<body>
+{% block content %}
+<div class="container mt-4">
+    <div class="speciality">
+        <div class="row text-center">
+            <div class="col-12">
+                <img src="{% static 'image/Speciality/Psychology & Counselling.jpg' %}"
+                     class="d-block w-100">
+            </div>
+            <h1>Psychology and Counselling</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-6 py-4">
+                <img src="{% static 'image/All_Doctors/Dr.Vishal-Ganar.png' %}" class="d-block w-100">
+                <h3><b>Dr. Vishal Ganar</b></h3>
+                <h5><b>Consultant psychologist</b></h5>
+                <h6>
+                    Post Graduate in Clinical Psychology, Post Graduate Diploma In Guidance and Counselling, MPhil -
+                    Rehabilitation Psychology, PhD - Psychology
+                </h6>
+            </div>
+            <div class="col-md-6 py-4">
+                <p>
+                    Mr. Vishal Ganar is a renowned Rehabilitation Psychologist, Counsellor & Guidance Worker, PG
+                    (Clinical Psychology), PG Dip in Guidance & Counseling, M Phil in Rehabilitation. He is a strong
+                    supporter of the Total Quality Rehabilitation Management (TQRM) that is followed internationally in
+                    countries like the United Kingdom (UK), Australia & other countries.
+                </p>
+                <p>
+                    Mr. Vishal has got more than 15 yrs of experience in this field, meeting, talking & counseling more
+                    than 70,000 parents. The most dreadful thought of the parents was what would happen to their kids
+                    after them?
+                </p>
+                <p>
+                    From being a consultant at UNO organization centre for justice and peace to service at national
+                    institutes to being a HOD at a reputed institute, the experiences gained helped to understand the
+                    nuances of services being provided in this field. That is when he decided to start Bhumika
+                    Foundation, which caters to Vocational Rehabilitation & Adult Independent Living Centre. He strongly
+                    believes in the motto “Care the child share the knowledge”.
+                </p>
+                <h3 style="text-align:left;"><b>Area Of Expertise</b></h3>
+                <ul type="square">
+                    <li>Behaviour Modification and Training</li>
+                    <li>Intellectual Assessment</li>
+                    <li>Aptitude Assessment</li>
+                    <li>Personality Assessment</li>
+                    <li>learning Disability</li>
+                    <li>Intellectual Disability</li>
+                    <li>Autism</li>
+                    <li>Emotional Management</li>
+                    <li>Addiction Problem</li>
+                    <li>Couple Therapy</li>
+                    <li>Family Counseling</li>
+                    <li>Students counseling and educational guidance</li>
+                    <li>Career Guidance</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+</body>
+</html>

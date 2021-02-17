@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+{% extends 'Hospital/base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title %} Home {% endblock title %}
+</head>
+<body>
+{% block content %}
+<!------------------------------------ Image Carousel Section --------------------------------------------------------->
+<div id="carousel" class="carousel slide" data-bs-ride="carousel" data-interval="">
+    <ol class="carousel-indicators">
+        <li data-bs-target="#carousel" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#carousel" data-bs-slide-to="1"></li>
+        <li data-bs-target="#carousel" data-bs-slide-to="2"></li>
+        <li data-bs-target="#carousel" data-bs-slide-to="3"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="{% static 'image/image1.png' %}" class="d-block w-100">
+            <div class="carousel-caption">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-6 bg-custom d-none d-md-block py-3 px-0">
+                            <h1 class="text-center">INAUGURATION BY</h1>
+                            <center>---------------------------------------------------------------</center>
+                            <h5><b>Hon'ble Shrimant Rajesh Tope</b></h5>
+                            <small>(Minister, Higher & Technical Eductaion) Maharashtra)</small><br>
+                            <h5><b>Hon'ble Shrimant Ujjwal Nikam</b></h5>
+                            <small>(Special Public Prosecutor)</small><br><br>
+                            <a href="{% url 'Hospital:about' %}" class="btn btn-lg">Click Here</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'image/image2.png' %}" class="d-block w-100">
+            <div class="carousel-caption">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-6 bg-custom d-none d-md-block py-3 px-0">
+                            <h1 class="text-center">Medical store</h1>
+                            <center>---------------------------------------------------------------</center>
+                            <p style="text-align:justify;padding:1rem;">
+                                We have got in-house medical store to ease your convenience of medicine.
+                                Medical treatment at your convenience is our utmost priority.
+                                The medical store is open all days 24 X 7 services.
+                            </p>
+                            <a href="{% url 'Hospital:about' %}" class="btn btn-lg">Know More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'image/image3.png' %}" class="d-block w-100">
+            <div class="carousel-caption">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-6 bg-custom d-none d-md-block py-3 px-0">
+                            <h1 class="text-center">Director Message</h1>
+                            <center>---------------------------------------------------------------</center>
+                            <p style="text-align:justify;padding:1rem;">
+                                Warm welcome to Sunrise Multispeciality Hopsital,
+                                Which is a fountain of speciality & superseciality services.
+                                This hospital is established to offer quality heathcare, available, accessible,
+                                & accountable to community at large. From the first day of our existence we kept
+                                patinet at centerfold of our organisation
+                            </p>
+                            <a href="{% url 'Hospital:about' %}" class="btn btn-lg">Know More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'image/image4.png' %}" class="d-block w-100">
+            <div class="carousel-caption">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-6 bg-custom d-none d-md-block py-3 px-0">
+                            <h1 class="text-center">Smart reception</h1>
+                            <center>---------------------------------------------------------------</center>
+                            <p style="text-align:justify;padding:1rem;">
+                                Our Smart Reception will help you get your appointment at the earliest
+                                and minimize the waiting time for the doctor's consultation.
+                                All our receptionists are trained with high-class services.
+                            </p>
+                            <a href="{% url 'Hospital:about' %}" class="btn btn-lg">Know More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </a>
+</div>
+
+<!--------------------------------------End Image Carousel Section ---------------------------------------------------->
+
+<!-------------------------------------- About Section -------------------------------------------------------------->
+<div class="home-about">
+    <div class="col-12 text-center mt-5">
+        <h1 class="pt-4">ABOUT</h1>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7 my-4">
+                <img src="{% static 'image/Gandhi-Jee.png' %}" class="w-100">
+            </div>
+            <div class="col-md-5 my-4">
+                <p>
+                    A warm welcome to Sunrise Multispeciality Hospital,
+                    which is a fountain of speciality & superspeciality services.
+                    This hospital is established to offer quality healthcare, available, accessible, &
+                    accountable to the community at large. From the first day of our existence,
+                    we kept patient at the centerfold of our organization.
+                </p>
+                <p>
+                    We are quite conscious that patients want their doctor
+                    to be human rather than robotic- a professional who can laugh & cry,
+                    have fun, feel pain & sufferings. Hence all our efforts are dedicated &
+                    committed to the creation of the patient value. We are filled with bliss
+                    to see the patient recover and give a warm farewell in anticipation of fast recovery.
+                </p>
+                <p>
+                    we are extremely happy that we have been able to achieve our motto with
+                    freat success and this wouldn't have been possible without a qualified &
+                    experienced team of medical, paramedical professionals, non-medical sraff,
+                    state-of-art infrastructure, equipment, above all the love & faith that has
+                    been shown by our patients, their friends & families.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------------------------------------End About Section ---------------------------------------------------->
+
+<!-------------------------------------- Service Section -------------------------------------------------------------->
+<div id="services">
+    <div class="col-12 text-center mt-5">
+        <h1 class="pt-4">SERVICES</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 my-4">
+                <div class="card">
+                    <img src="{% static 'image/general_medicine.png' %}" class="w-100">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>General Medicine</b></h5>
+                        <p>
+                            General Medicine department caters to the OPD & IPD services for adult patients.
+                        </p>
+                        <center><a href="{% url 'Hospital:general_medicine' %}"
+                                   class="btn btn-outline-dark btn-md mb-2">View More</a></center>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 my-4">
+                <div class="card">
+                    <img src="{% static 'image/paediatrics_eonatology.png' %}" class="w-100">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>Paediatrics & Neonatology</b></h5>
+                        <p>
+                            Immunization, Well Bady Clinic, Routine pediatric OPD & IPD services, Adolescent clinic.
+                        </p>
+                        <center><a href="{% url 'Hospital:pediatrician_neonatologist' %}"
+                                   class="btn btn-outline-dark btn-md">View More</a></center>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 my-4">
+                <div class="card">
+                    <img src="{% static 'image/gynaecology.png' %}" class="w-100">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>Obstetrics & Gynaecology</b></h5>
+                        <p>
+                            You could be pregnant. Feel free to consult us. All Labour Facility under one Roof.
+                        </p>
+                        <center><a href="{% url 'Hospital:obstetrician_gynecologist' %}"
+                                   class="btn btn-outline-dark btn-md">View More</a></center>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 my-4">
+                <div class="card">
+                    <img src="{% static 'image/csmetology.png' %}" class="w-100">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>Dermatology Skin & VD</b></h5>
+                        <p>
+                            At the Accalia Dermatological Clinic, we have assembled an outstanding team of doctors.
+                        </p>
+                        <center><a href="{% url 'Hospital:dermatology_skin_vd' %}"
+                                   class="btn btn-outline-dark btn-md">View More</a></center>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 my-4">
+                <div class="card">
+                    <img src="{% static 'image/performing_surgery.png' %}" class="w-100">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>General & Laparoscopic Surgery</b></h5>
+                        <p>
+                            All General and Laparoscopic Surgery are done by our skilled surgeons.
+                        </p>
+                        <center><a href="{% url 'Hospital:general_laparoscopic_surgery' %}"
+                                   class="btn btn-outline-dark btn-md">View More</a></center>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 my-4">
+                <div class="card">
+                    <img src="{% static 'image/x-ray_results.png' %}" class="w-100">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>Orthopedics</b></h5>
+                        <p>
+                            All routine orthopedic surgery, Trauma Surgery are done by Skilled Surgeons.
+                        </p>
+                        <center><a href="{% url 'Hospital:orthopedics' %}"
+                                   class="btn btn-outline-dark btn-md">View More</a></center>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------------------------------- End Service Section ---------------------------------------------------------->
+
+<!-------------------------------------- TESTIMONIALS Section ---------------------------------------------------->
+
+<div class="col-12 text-center mt-5">
+    <h1 class="pt-4">TESTIMONIALS</h1>
+</div>
+
+<div id="testimonials" class="carousel slide" data-bs-ride="carousel" data-interval="">
+    <div class="row">
+        <div class="col-10 offset-1">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="{% static 'image/Testimonials/Aishwarya_korlekar.png' %}" class="d-block w-100">
+                    <!--                    <div class="carousel-caption">-->
+                    <!--                        <div class="container">-->
+                    <!--                            <div class="row justify-content-center">-->
+                    <!--                                <h1 class="text-center">Aishwarya Korlekar</h1>-->
+                    <!--                            </div>-->
+                    <!--                        </div>-->
+                    <!--                    </div>-->
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'image/Testimonials/Sachin_Shinde.png' %}" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'image/Testimonials/Sumit_Gaikwad.png' %}" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'image/Testimonials/Ganesh_Bhaskar.png' %}" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'image/Testimonials/Shailesh_jain.png' %}" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'image/Testimonials/Tanaji_Mote.png' %}" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'image/Testimonials/Mahendra_Kadam.png' %}" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'image/Testimonials/Nitin_Pawar.png' %}" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'image/Testimonials/Prashant_Gaikwad.png' %}" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'image/Testimonials/Rupali_dengle.png' %}" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'image/Testimonials/Vaishali_Dabhade.png' %}" class="d-block w-100">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#testimonials" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#testimonials" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-------------------------------- End TESTIMONIALS Section ---------------------------------------------------------->
+
+<!-------------------------------------- TPA & Insurances Section ---------------------------------------------------->
+<div class="home-insurances">
+    <div class="col-12 text-center mt-5">
+        <h1 class="pt-4">INSURANCE</h1>
+    </div>
+
+    <div class="container">
+        <div class="row mt-4">
+            <div class="col-sm-6 col-md-3">
+                <img src="{% static 'image/TPA_Insurances/aditya-birla.png' %}" title="Aditya Birla Insurance"
+                     class="w-100">
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <img src="{% static 'image/TPA_Insurances/acko.png' %}" title="ACKO Insurance" class="w-100">
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <img src="{% static 'image/TPA_Insurances/apollo-munich.png' %}" title="Apolo Munich Health Insurance"
+                     class="w-100">
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <img src="{% static 'image/TPA_Insurances/bharti-axa.png' %}" title="Bharti General Insurance"
+                     class="w-100">
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm-6 col-md-3">
+                <img src="{% static 'image/TPA_Insurances/bjaj.png' %}" title="Bajaj Allianz Insurance" class="w-100">
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <img src="{% static 'image/TPA_Insurances/care-health-insurance.png' %}" title="Care Health Insurance"
+                     class="w-100">
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <img src="{% static 'image/TPA_Insurances/chola.png' %}" title="Chola MS General Insurance"
+                     class="w-100">
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <img src="{% static 'image/TPA_Insurances/Manipal-cigna.png' %}" title="Manipal Cigna Health Insurance"
+                     class="w-100">
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 text-center mt-5">
+        <a href="{% url 'Hospital:tpa_insurances' %}" class="btn btn-outline-dark btn-md">View All Insurance</a>
+    </div>
+</div>
+<!-------------------------------------- End TPA & Insurances Section ------------------------------------------------->
+<div class="email-section mt-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-2  mt-3">
+                <h3>Subscribe For Latest News and Update</h3>
+                <form method="post" autocomplete="off">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <center>
+                        <input type="submit" value="Subscribe Now" class="btn btn-danger btn-sm subscribe-btn">
+                    </center>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+</body>
+</html>

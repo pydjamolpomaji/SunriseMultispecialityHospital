@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+{% extends 'Hospital/base.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}
+    Physiotherapy
+    {% endblock title %}
+</head>
+<body>
+{% block content %}
+<div class="container mt-4">
+    <div class="speciality">
+        <div class="row text-center">
+            <div class="col-12">
+                <img src="{% static 'image/Speciality/physiotherapy.jpg' %}"
+                     class="d-block w-100">
+            </div>
+            <h1>Physiotherapist</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-6 py-4">
+                <img src="{% static 'image/All_Doctors/Dr.-Nalini-Shinde.png' %}" class="d-block w-100">
+                <h3><b>Dr. Nalini Shinde</b></h3>
+                <h5><b>Consultant Physiotherapist</b></h5>
+                <h6>B.Pth</h6>
+            </div>
+            <div class="col-md-6 py-4">
+                <p>
+                    Dr. Nalini Shinde has done the B.Pth from KEM hospital, Mumbai.
+                </p>
+                <h3 style="text-align:left;"><b>Area Of Expertise</b></h3>
+                <ul type="square">
+                    <li>Chronic Pain Treatment</li>
+                    <li>Spine Injury</li>
+                    <li>Post Surgery Physiotherapy/Rehabilitation</li>
+                    <li>Sports Physical Therapy</li>
+                    <li>Soft Tissue Mobilization</li>
+                    <li>Spondylitis</li>
+                    <li>Orthopedic Physiotherapy</li>
+                    <li>Spine Mobilization</li>
+                    <li>Musculoskeletal Injury Physiotherapy</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+</body>
+</html>

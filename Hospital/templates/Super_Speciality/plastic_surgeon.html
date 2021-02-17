@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+{% extends 'Hospital/base.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}
+    Plastic Surgeon
+    {% endblock title %}
+</head>
+<body>
+{% block content %}
+<div class="container mt-4">
+    <div class="speciality">
+        <div class="row text-center">
+            <div class="col-12">
+                <img src="{% static 'image/Speciality/Common-Banner-Header.png' %}"
+                     class="d-block w-100">
+            </div>
+            <h1>Plastic Surgeon</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-6 py-4">
+                <img src="{% static 'image/All_Doctors/Mr_Doctordummy.png' %}" class="d-block w-100">
+                <h3><b>DR. VINOD PACHADE</b></h3>
+                <h5><b>( Cosmetic | Plastic Surgeon| Reconstructive and Burn surgeon)</b></h5>
+                <h6>
+                    M.B.B.S M.S (Gen.Surgery), DNB(Gen. Surgery)<br>
+                    M.Ch. (Plastic Surgery), DNB(Plastic Surgery)
+                </h6>
+            </div>
+            <div class="col-md-6 py-4">
+                <p>
+                    Dr. Vinod Pachade is a renowned plastic and reconstructive and cosmetic surgeon in Navi Mumbai with
+                    more than 10 yrs of experience He completed his education from the prestigious Grant Government
+                    Medical college Mumbai. Right from the training period, he has got an immense interest in the
+                    “cosmetic world” of plastic surgery due to his ability to see and analyze finer details in the shape
+                    and beauty of the human body.
+                </p>
+                <p>
+                    Due to specialized training in hair transplant and body contouring surgery, he has successfully
+                    performed many hair transplantations and tummy tuck surgery (abdominoplasty) till date. He does all
+                    types of breast surgeries including breast implants, tightening of breast and reduction of the
+                    breast. Liposuction and facial cosmetic procedure are the most common surgeries in his routine
+                    practice. He is associated with the number of leading hospitals across the city.
+                </p>
+                <h3 style="text-align:left;"><b>Area Of Expertise</b></h3>
+                <ul type="square">
+                    <li>Hair Transplantation</li>
+                    <li>Tummy Tuck</li>
+                    <li>Breast Cosmetic Surgery</li>
+                    <li>Facial Cosmetic Surgery</li>
+                    <li>Liposuction</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+</body>
+</html>

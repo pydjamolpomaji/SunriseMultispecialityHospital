@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% extends 'Hospital/base.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}
+    About
+    {% endblock title %}
+</head>
+<body>
+{% block content %}
+<div class="container mt-4">
+    <div class="about-us">
+        <div class="row text-center">
+            <h1>About</h1>
+            <div class="col-md-10 offset-1">
+                <img src="{% static 'image/AboutUs/1st-slide.jpg' %}" class="w-100">
+                <img src="{% static 'image/AboutUs/2nd-slide.jpg' %}" class="w-100">
+                <img src="{% static 'image/AboutUs/3rd-slide.jpg' %}" class="w-100">
+<!--                <img src="{% static 'image/AboutUs/4th-slide.jpg' %}" class="w-100">-->
+<!--                <img src="{% static 'image/AboutUs/5th-slide.jpg' %}" class="w-100">-->
+                <img src="{% static 'image/AboutUs/6th-slide.jpg' %}" class="w-100">
+                <img src="{% static 'image/AboutUs/7th-slide.jpg' %}" class="w-100">
+                <img src="{% static 'image/AboutUs/8th-slide.jpg' %}" class="w-100">
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+</body>
+</html>

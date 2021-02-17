@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+{% extends 'Hospital/base.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}
+    General Medicine
+    {% endblock title %}
+</head>
+<body>
+{% block content %}
+<div class="container mt-4">
+    <div class="speciality">
+        <div class="row text-center">
+            <div class="col-12">
+                <img src="{% static 'image/Speciality/Common-Banner-Header.png' %}" class="d-block w-100">
+            </div>
+            <h1>General Medicine</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-6 py-4">
+                <img src="{% static 'image/All_Doctors/Dr.-Hemant.png' %}" class="d-block w-100">
+                <h3><b>Dr. Hemant Dadasaheb Ingale</b></h3>
+                <h5><b>Consultant Physician & Diabetologist</b></h5>
+                <h6>MBBS, DNB MEDICINE, MNAMS, CCEBDM, CCIGC</h6>
+            </div>
+            <div class="col-md-6 py-4">
+                <p>
+                    Worked as Consultant Physician in Navi Mumbai Municipal
+                    Corporation General Hospital from 2012 to 2014.
+                </p>
+                <p>
+                    Got awarded as MNAMS i.e Member of National Academy of Medical Sciences in 2015.
+                </p>
+                <p>
+                    Completed "Certificate Course in Evidence-Based Diabetes Mellitus
+                    (CCEBDM)" conducted by the Public Health Foundation of India (PHFI) in 2015.
+                </p>
+                <p>
+                    Completed Certificate Course in "Current Concepts in
+                    Thyroidology" conducted by American Thyroid Association in 2016.
+                </p>
+                <p>
+                    Completed "An Advanced Course in ECG Interpretation"
+                    conducted by Royal College of Physicians (London) in 2017
+                </p>
+                <p>
+                    Completed "PostGraduate Diploma in Clinical Endocrinology &
+                    Diabetes" conducted by Royal College of Physicians
+                    London and EACME in 2018-19
+                </p>
+                <p>
+                    Completed "Certified Program in Management of Clinical
+                    Hypertension" conducted by The American Heart Association in 2019
+                </p>
+                <p>
+                    Completed "Certificate Course in Integrated Geriatric Care"
+                    conducted by Public Health Foundation of India (PHFI) in 2020-21
+                </p>
+                <p>
+                    Special Interest- Diabetes Mellitus , Hypertension,
+                    Thyroid, Infectious disease ( Malaria, Typhoid, Dengue etc)
+                </p>
+                <h3 style="text-align:left;"><b>Area Of Expertise</b></h3>
+                <ul type="square">
+                    <li>Diabetes Mellitus</li>
+                    <li>Hypertension</li>
+                    <li>Thyroid</li>
+                    <li>Infectious disease ( Malaria, Typhoid, Dengue etc)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+{% extends 'Hospital/base.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}
+    ENT
+    {% endblock title %}
+</head>
+<body>
+{% block content %}
+<div class="container mt-4">
+    <div class="speciality">
+        <div class="row text-center">
+            <div class="col-12">
+                <img src="{% static 'image/Speciality/ENT.jpg' %}"
+                     class="d-block w-100">
+            </div>
+            <h1>ENT</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-6 py-4">
+                <img src="{% static 'image/All_Doctors/Dr.-Sujata-Gawai.png' %}" class="d-block w-100">
+                <h3><b>Dr. Sujata Gawai</b></h3>
+                <h5><b>Fellowship in Endoscopic Sinus & Skull Base Surgeries</b></h5>
+                <h6>DNB (Otolaryngorhinology), M.B.B.S.</h6>
+            </div>
+            <div class="col-md-6 py-4">
+                <p>
+                    Dr. Sujata Gawai accomplished her post-graduation in ENT from Mahatma Gandhi Mission Medical
+                    College&Hospital at Kamothe, Navi Mumbai in December 2011. To her credit, she has cleared the
+                    National board of examination (DNB) in her specialty in first attempt.
+                </p>
+                <p>
+                    She has completed a fellowship in Endoscopic Sinus and Skull Base Surgeries at Bombay hospital under
+                    the able guidance of Dr. Nishit J. Shah. During this period she performed/assisted multiple
+                    endoscopic sinus surgeries, endoscopic pituitary surgeries, CSF leak repair surgeries, etc. but also
+                    developed expertise in other aspects of patient care, preoperative and postoperative management. She
+                    has performed numerous cadaveric endoscopic sinuses and skull base dissections.
+                </p>
+                <p>
+                    During her fellowship training, she had an opportunity to work at Bombay hospital, Breach Candy
+                    Hospital, P. D. Hinduja hospital, Cumballa hill and Saifee hospital. With an aim to help children
+                    and adults with deafness, Dr. Sujata has focussed on learning about Cochlear Implants, the treatment
+                    which helps a deaf child or deaf adult to hear and hence speak; under ‘Padmashree’ Dr. Milind V.
+                    Kirtane at P. D. Hinduja Hospital. Dr. Sujata has assisted numerous Cochlear Implant surgeries and
+                    other ear and sinuses surgeries.
+                </p>
+                <h3 style="text-align:left;"><b>Area Of Expertise</b></h3>
+                <ul type="square">
+                    <li>FESS (endoscopic sinus surgery)</li>
+                    <li>Septoplasty/ SMR</li>
+                    <li>Tympanoplasty</li>
+                    <li>Tympano mastoidectomy</li>
+                    <li>Tonsillectomy</li>
+                    <li>Adenoidectomy</li>
+                    <li>Myringotomy/grommet insertion</li>
+                    <li>Tongue-tie release</li>
+                    <li>Ear lobe repair</li>
+                    <li>Incision and drainage of abscess or cyst in head and neck region</li>
+                    <li>Incision and drainage of seroma over-ear pinna</li>
+                    <li>Foreign body removal in ear, nose and throat</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+</body>
+</html>

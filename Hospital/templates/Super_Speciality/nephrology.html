@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+{% extends 'Hospital/base.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}
+    Nephrology
+    {% endblock title %}
+</head>
+<body>
+{% block content %}
+<div class="container mt-4">
+    <div class="speciality">
+        <div class="row text-center">
+            <div class="col-12">
+                <img src="{% static 'image/Speciality/Common-Banner-Header.png' %}"
+                     class="d-block w-100">
+            </div>
+            <h1>Nephrology</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-6 py-4">
+                <img src="{% static 'image/All_Doctors/Dr.Jitendra-Khandge.png' %}" class="d-block w-100">
+                <h3><b>Dr. Jitendra Khandge</b></h3>
+                <h5><b>Consultant Nephrology</b></h5>
+                <h6>MBBS, D.N.B(Nephrology)</h6>
+            </div>
+            <div class="col-md-6 py-4">
+                <p>
+                    Experienced Nephrologist with a demonstrated history of working in the hospital & health care
+                    industry. Skilled in Healthcare Consulting, Epidemiology, Emergency Medicine, Critical Care Nursing,
+                    and Healthcare. Strong consulting professional with a 10th focused in High School/Secondary Diplomas
+                    and Certificates from Dr. Bedekar Vidyamandir, Thane.
+                </p>
+                <p>
+                    Dr. Jitendra Khandge is a consultant at various reputed hospital-like TERNA Hospital and research
+                    center.
+                    Consultant Nephrologist at Reliance Hospital and research center, Koparkhairane and many more.
+                </p>
+                <h3 style="text-align:left;"><b>Area Of Expertise</b></h3>
+                <ul type="square">
+                    <li>Clinical Nephrology</li>
+                    <li>Transplantation including ABOi and cadaver</li>
+                    <li>Critical care Nephrology</li>
+                    <li>Interventional Nephrology e.g. vascular access procedures</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+</body>
+</html>
